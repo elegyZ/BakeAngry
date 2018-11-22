@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EECFA1" >
+
+    <Button
+        android:id="@+id/bt_mode_mope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="140dp"
+        android:text="@string/bt_mode_mope" />
+    
+    <Button
+        android:id="@+id/bt_mode_upset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="150dp"
+        android:text="@string/bt_mode_upset" />
+    
+    <Button
+        android:id="@+id/bt_mode_annoy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="220dp"
+        android:text="@string/bt_mode_annoy" />
+    
+    <Button
+        android:id="@+id/bt_mode_angry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="270dp"
+        android:text="@string/bt_mode_angry" />
+    
+    <Button
+        android:id="@+id/bt_mode_fury"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="340dp"
+        android:text="@string/bt_mode_fury" />
+    
+    <Button
+        android:id="@+id/bt_mode_rage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="390dp"
+        android:text="@string/bt_mode_rage" />
+    
+    <ImageView
+        android:id="@+id/iv_mode_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/bt_mode_mope"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp"
+        android:src="@drawable/temper"
+        android:contentDescription="@string/app_name" />
+
+    <ImageView
+        android:id="@+id/iv_mode_thermometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/thermometer"
+        android:contentDescription="@string/app_name" />
+
+    <ImageView
+        android:id="@+id/iv_mode_flame0"
+        android:layout_width="15dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/bt_mode_mope"
+        android:layout_toEndOf="@+id/bt_mode_mope"
+        android:src="@drawable/flame"
+        android:contentDescription="@string/app_name" />
+    
+    <ImageView
+        android:id="@+id/iv_mode_flame1"
+        android:layout_width="15dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/bt_mode_upset"
+        android:layout_toStartOf="@+id/bt_mode_upset"
+        android:src="@drawable/flame"
+        android:contentDescription="@string/app_name" />
+    
+   <ImageView
+        android:id="@+id/iv_mode_flame2"
+        android:layout_width="15dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/bt_mode_annoy"
+        android:layout_toEndOf="@+id/bt_mode_annoy"
+        android:src="@drawable/flame"
+        android:contentDescription="@string/app_name" />
+   
+   <ImageView
+        android:id="@+id/iv_mode_flame3_1"
+        android:layout_width="15dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/bt_mode_angry"
+        android:layout_toStartOf="@+id/bt_mode_angry"
+        android:src="@drawable/flame"
+        android:contentDescription="@string/app_name" />
+   
+   <ImageView
+        android:id="@+id/iv_mode_flame3_2"
+        android:layout_width="15dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/bt_mode_angry"
+        android:layout_toStartOf="@+id/iv_mode_flame3_1"
+        android:src="@drawable/flame"
+        android:contentDescription="@string/app_name" />
+
+</RelativeLayout>
