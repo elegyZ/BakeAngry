@@ -2,44 +2,55 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#79CDCD" >
-    
+    android:background="#6C020C" >
+
     <ImageView
-        android:id="@+id/iv_starttransf_bg1"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:src="@drawable/start_bg1"
-        android:contentDescription="@string/app_name" />
+        android:id="@+id/iv_starttransf_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/bg_starttransf" />
+
+    <ImageView
+        android:id="@+id/iv_starttransf_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/dialog" />
 
     <ImageView
         android:id="@+id/iv_starttransf_food"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:src="@drawable/egg_start"
-        android:contentDescription="@string/app_name" />
-
-    <Button
-        android:id="@+id/bt_starttransf_start"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/iv_starttransf_food"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="34dp"
-        android:text="@string/bt_starttransf_start" />
+        android:layout_marginBottom="80dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/egg_start" />
 
     <TextView
         android:id="@+id/tv_starttransf1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/iv_starttransf_bg1"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="26dp"
-        android:text="@string/tv_starttransf1"
+        android:layout_marginTop="40dp"
         android:gravity="center"
+        android:text="@string/tv_starttransf1"
         android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tv_starttransf_shake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:text="@string/tv_starttransf_shake"
+        android:textColor="#000000"
+        android:textSize="40sp" />
 
 </RelativeLayout>

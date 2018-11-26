@@ -3,6 +3,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#79CDCD" >
+    
+    <ImageView
+        android:id="@+id/iv_endtransf_bg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/bg_pan"
+        android:contentDescription="@string/app_name" />
 
     <ImageView
         android:id="@+id/iv_endtransf_food"
@@ -12,5 +21,30 @@
         android:layout_centerVertical="true"
         android:src="@drawable/egg_end"
         android:contentDescription="@string/app_name" />
+    
+    <Button
+        android:id="@+id/bt_endtransf_playagain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/bt_endtransf_screenshot"
+        android:layout_above="@+id/bt_endtransf_screenshot"
+        android:text="@string/bt_endtransf_playagain" />
+
+    <Button
+        android:id="@+id/bt_endtransf_screenshot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/bt_endtransf_screenshot" />
+
+    <Button
+        android:id="@+id/bt_endtransf_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/bt_endtransf_finish" />
 
 </RelativeLayout>

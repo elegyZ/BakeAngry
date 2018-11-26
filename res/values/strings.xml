@@ -3,15 +3,19 @@
 
     <string name="app_name">BakeAngry</string>
     <string name="action_settings">Settings</string>
-    <string name="bt_main_start">START</string>
-    <string name="bt_mode_mope">Mope</string>
-    <string name="bt_mode_upset">Upset</string>
-    <string name="bt_mode_annoy">Annoy</string>
-    <string name="bt_mode_angry">Angry</string>
-    <string name="bt_mode_rage">Rage</string>
+    <string name="bt_start_start">START</string>
+    <string name="tv_mode_mope">MOPE</string>
+    <string name="tv_mode_upset">UPSET</string>
+    <string name="tv_mode_annoy">ANNOY</string>
+    <string name="tv_mode_angry">ANGRY</string>
+    <string name="tv_mode_rage">RAGE</string>
     <string name="tv_game_shaketime">0</string>
-    <string name="bt_starttransf_start">Start Game</string>
     <string name="tv_starttransf1">Try To Cook These Egg!!\nUsing Your Emotion!!</string>
-    <string name="bt_mode_fury">Fury</string>
+    <string name="tv_mode_fury">FURY</string>
+    <string name="bt_endtransf_screenshot">Take A ScreenShot!</string>
+    <string name="bt_endtransf_playagain">Play Again!</string>
+    <string name="tv_start_start">START</string>
+    <string name="tv_starttransf_shake">SHAKE IT OFF</string>
+    <string name="bt_endtransf_finish">Finish Game</string>
 
 </resources>

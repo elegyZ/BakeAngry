@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6C020C"
+    tools:context="com.elegy.bakeangry.MainActivity"
+    android:id="@+id/root" >
+
+    <ImageView
+        android:id="@+id/iv_start_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/bg_start" />
+    
+    <ImageView
+        android:id="@+id/iv_start_fire"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/iv_start_pan"
+        android:layout_marginStart="50dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/fire" />
+
+    <ImageView
+        android:id="@+id/iv_start_pan"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/pan" />
+
+    <TextView
+        android:id="@+id/tv_start_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_start_fire"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/tv_start_start"
+        android:textColor="#000000"
+        android:textSize="60sp" />
+
+</RelativeLayout>
