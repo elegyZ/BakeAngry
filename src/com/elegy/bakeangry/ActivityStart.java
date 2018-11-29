@@ -1,12 +1,9 @@
 package com.elegy.bakeangry;
 
 import com.app.bakeangry.R;
-import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
@@ -15,7 +12,7 @@ import startPage.AnimationFire;
 import startPage.AnimationPan;
 import tool.MusicTool;
 
-public class ActivityStart extends Activity 
+public class ActivityStart extends BaseActivity 
 {
 	private TextView tv_start_start;
 	private Typeface typeface;
@@ -48,28 +45,8 @@ public class ActivityStart extends Activity
 			{
 				Intent intent = new Intent(ActivityStart.this, ActivityMode.class);
 				startActivity(intent);
-				finish();
 			}
 		};tv_start_start.setOnClickListener(lst_start_start);
-	}
-	
-	
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) 
-	{
-		getMenuInflater().inflate(R.menu.main, menu);
-		return true;
-	}
-
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) 
-	{
-		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
-		}
-		return super.onOptionsItemSelected(item);
 	}
 }
 

@@ -1,14 +1,13 @@
 package com.elegy.bakeangry;
 
 import com.app.bakeangry.R;
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 import mainPage.AnimationLion;
 
-public class MainActivity extends Activity 
+public class MainActivity extends BaseActivity 
 {
 	private ImageView iv_main_lion;
 	private AnimationLion animationLion;
@@ -23,8 +22,6 @@ public class MainActivity extends Activity
 		animationLion = new AnimationLion(this, iv_main_lion);
 		animationLion.drawAnimation();
 	}
-	
-	
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) 

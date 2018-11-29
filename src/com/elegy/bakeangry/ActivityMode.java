@@ -1,7 +1,6 @@
 package com.elegy.bakeangry;
 
 import com.app.bakeangry.R;
-import android.app.Activity;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
@@ -10,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import modePage.AnimationMode;
 
-public class ActivityMode extends Activity 
+public class ActivityMode extends BaseActivity 
 {
 	private AnimationMode animation;
 	private ImageView iv_mode_vertical;

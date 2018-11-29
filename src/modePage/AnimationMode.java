@@ -50,7 +50,6 @@ public class AnimationMode
 				Intent intent = new Intent(activity, ActivityStartTransfer.class);
             	intent.putExtra("mood", moodID);
             	activity.startActivity(intent);
-            	activity.finish();
 			}
 			@Override
 			public void onAnimationRepeat(Animation animation) {}

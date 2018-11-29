@@ -38,7 +38,6 @@ public class AnimationLion
 			{
 				Intent intent = new Intent(activity, ActivityStart.class);
             	activity.startActivity(intent);
-            	activity.finish();
 			}
 			@Override
 			public void onAnimationRepeat(Animation animation) {}

@@ -17,8 +17,9 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginStart="25dp"
+        android:layout_marginBottom="4dp"
         android:layout_alignBottom="@+id/iv_game_pan"
-        android:src="@drawable/egg"
+        android:src="@drawable/baozi"
         android:contentDescription="@string/app_name" />
 
     <ImageView
@@ -27,16 +28,27 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:src="@drawable/pan"
+        android:contentDescription="@string/app_name" />
+
+    <ImageView
+        android:id="@+id/iv_game_boat"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/dragonboat"
         android:contentDescription="@string/app_name" />
 
     <TextView
         android:id="@+id/tv_game_shaketime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="56dp"
+        android:layout_marginTop="33dp"
         android:text="@string/tv_game_shaketime"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 

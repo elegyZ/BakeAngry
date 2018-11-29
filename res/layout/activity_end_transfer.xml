@@ -2,49 +2,86 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#79CDCD" >
+    android:background="#6C020C" >
+
+    <ImageView
+        android:id="@+id/iv_endtransf_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/zongzi_end" />
     
     <ImageView
-        android:id="@+id/iv_endtransf_bg1"
+        android:id="@+id/iv_endtransf_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/title" />
+    
+    <TextView
+        android:id="@+id/tv_endtransf_words2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:src="@drawable/bg_pan"
-        android:contentDescription="@string/app_name" />
-
-    <ImageView
-        android:id="@+id/iv_endtransf_food"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:src="@drawable/egg_end"
-        android:contentDescription="@string/app_name" />
-    
-    <Button
-        android:id="@+id/bt_endtransf_playagain"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/bt_endtransf_screenshot"
-        android:layout_above="@+id/bt_endtransf_screenshot"
-        android:text="@string/bt_endtransf_playagain" />
-
-    <Button
-        android:id="@+id/bt_endtransf_screenshot"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginBottom="10dp"
-        android:text="@string/bt_endtransf_screenshot" />
-
-    <Button
-        android:id="@+id/bt_endtransf_finish"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:text="@string/bt_endtransf_finish" />
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:alpha="0.7"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:text="@string/tv_endtransf_words" />
+
+    <TextView
+        android:id="@+id/tv_endtransf_words"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:text="@string/tv_endtransf_words"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/iv_endtransf_again"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/bt_again" />
+    
+    <ImageView
+        android:id="@+id/iv_endtransf_screenshot"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_toEndOf="@+id/iv_endtransf_again"
+        android:layout_alignBottom="@+id/iv_endtransf_again"
+        android:layout_marginStart="10dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/bt_screenshot" />
+    
+    <ImageView
+        android:id="@+id/iv_endtransf_share"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_toStartOf="@+id/iv_endtransf_finish"
+        android:layout_alignBottom="@+id/iv_endtransf_finish"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/bt_share" />
+    
+    <ImageView
+        android:id="@+id/iv_endtransf_finish"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/bt_finish" />
 
 </RelativeLayout>

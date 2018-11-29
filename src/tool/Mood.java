@@ -8,8 +8,11 @@ public class Mood
 	private int startPicture; 
 	private int gamePicture; 
 	private int endPicture; 
+	private String startText;
+	private String endText;
+	private int gravityTime;
 	
-	public Mood(String moodName, int shakeNumber, int startPicture, int gamePicture, int endPicture, int stainPicture)
+	public Mood(String moodName, int shakeNumber, int startPicture, int gamePicture, int endPicture, int stainPicture, String startText, String endText, int gravityTime)
 	{
 		this.moodName = moodName;
 		this.shakeNumber = shakeNumber;
@@ -17,36 +20,9 @@ public class Mood
 		this.gamePicture = gamePicture;
 		this.endPicture = endPicture;
 		this.stainPicture = stainPicture;
-	}
-	
-	public void setMoodName(String moodName)
-	{
-		this.moodName = moodName;
-	}
-	
-	public void setShakeNumber(int shakeNumber)
-	{
-		this.shakeNumber = shakeNumber;
-	}
-	
-	public void setStartPicture(int startPicture)
-	{
-		this.startPicture = startPicture;
-	}
-	
-	public void setGamePicture(int gamePicture)
-	{
-		this.gamePicture = gamePicture;
-	}
-	
-	public void setEndPicture(int endPicture)
-	{
-		this.endPicture = endPicture;
-	}
-	
-	public void setStainPicture(int stainPicture)
-	{
-		this.stainPicture = stainPicture;
+		this.startText = startText;
+		this.endText = endText;
+		this.gravityTime = gravityTime;
 	}
 	
 	public String getMoodName()
@@ -77,5 +53,20 @@ public class Mood
 	public int getStainPicture()
 	{
 		return stainPicture;
+	}
+	
+	public String getStartText()
+	{
+		return startText;
+	}
+	
+	public String getEndText()
+	{
+		return endText;
+	}
+	
+	public int getGravityTime()
+	{
+		return gravityTime;
 	}
 }

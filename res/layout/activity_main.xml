@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="#6C020C"
     tools:context="com.elegy.bakeangry.MainActivity"
-    android:id="@+id/root" >
+    android:id="@+id/layout_main" >
 
     <ImageView
         android:id="@+id/iv_main_bg"

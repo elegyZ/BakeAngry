@@ -17,5 +17,8 @@
     <string name="tv_start_start">START</string>
     <string name="tv_starttransf_shake">SHAKE IT OFF</string>
     <string name="bt_endtransf_finish">Finish Game</string>
+    <string name="bt_endtransf_share">share</string>
+    <string name="tv_endtransf_words">Wow, you have used your fury to cooked this zongzi!!\nWell Done!!</string>
+    <string name="tv_endtransf_title">BAKE\nANGRY</string>
 
 </resources>

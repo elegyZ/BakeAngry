@@ -18,20 +18,6 @@ import android.widget.Toast;
 
 public class ScreenShotTool 
 {
-	public static void getPermission(Activity activity)
-	{
-		/*if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-            if (ContextCompat.checkSelfPermission(activity, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) 
-            {
-                ActivityCompat.requestPermissions(activity,
-                        new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
-                        MY_PERMISSIONS_REQUEST_CALL_PHONE);
-            }else {
-                //showToast("»®œﬁ“—…Í«Î");
-            }
-        }*/
-	}
-	
 	public static Uri saveImageToGallery(Context context, Bitmap bitmap) 
 	{
         //first store the image
@@ -60,7 +46,7 @@ public class ScreenShotTool
         try 
         {
             MediaStore.Images.Media.insertImage(context.getContentResolver(), picturefile.getAbsolutePath(), pictureName, "BakeAngry's Screenshot");
-            Toast.makeText(context, "Successfully Saved!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "Screenshot Has Successfully Saved!", Toast.LENGTH_SHORT).show();
         } catch (FileNotFoundException e) {
         	Toast.makeText(context, "Fail To Save The Screenshot!", Toast.LENGTH_SHORT).show();
             e.printStackTrace();

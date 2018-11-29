@@ -29,17 +29,19 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="80dp"
         android:contentDescription="@string/app_name"
-        android:src="@drawable/egg_start" />
+        android:src="@drawable/zongzi" />
 
     <TextView
-        android:id="@+id/tv_starttransf1"
+        android:id="@+id/tv_starttransf_hint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
+        android:layout_margin="25dp"
         android:gravity="center"
         android:text="@string/tv_starttransf1"
+        android:textColor="#000000"
+        android:textSize="23sp"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
