@@ -8,9 +8,7 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.widget.ImageView;
-import android.widget.TextView;
 import gamePage.AnimationBoat;
-import gamePage.AnimationDialog;
 import gamePage.AnimationFood;
 import gamePage.AnimationPan;
 import tool.Mood;
@@ -22,21 +20,14 @@ public class ActivityGame extends BaseActivity implements SensorEventListener
 	private MoodTool moodTool;
 	private int moodID;
 	private Mood mood;
-	private TextView tv_game_shaketime;
 	private ImageView iv_game_pan;
 	private ImageView iv_game_food;
 	private ImageView iv_game_boat;
 	private AnimationBoat boatAnimation;
-	private AnimationDialog dialogAnimation;
 	private int shakeNumber;
     private SensorManager sensorManager;
     private long lastShakeTime;
 	private int num = 0;
-	
-	public void drawDialog()
-	{
-		dialogAnimation.drawAnimation();
-	}
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) 
@@ -46,7 +37,6 @@ public class ActivityGame extends BaseActivity implements SensorEventListener
 		getActionBar().hide();
 		lastShakeTime = System.currentTimeMillis();
 		sensorManager = (SensorManager)this.getSystemService(SENSOR_SERVICE);
-        tv_game_shaketime = (TextView)this.findViewById(R.id.tv_game_shaketime);
         iv_game_pan = (ImageView)this.findViewById(R.id.iv_game_pan);
         iv_game_food = (ImageView)this.findViewById(R.id.iv_game_food);
         iv_game_boat = (ImageView)this.findViewById(R.id.iv_game_boat);
@@ -104,7 +94,6 @@ public class ActivityGame extends BaseActivity implements SensorEventListener
 				else if(currentShakeTime - lastShakeTime > 400)
 				{
 					num++;
-					tv_game_shaketime.setText("р║ак"+num+"об");			//test
 					AnimationPan panAnimation = new AnimationPan(iv_game_pan);
 					AnimationFood foodAnimation = new AnimationFood(iv_game_food);
 					panAnimation.drawAnimation();
