@@ -31,6 +31,8 @@
         <activity android:name="com.elegy.bakeangry.ActivityEndTransfer"></activity>
         <activity android:name="com.elegy.bakeangry.ActivityStart"></activity>
         <activity android:name="com.elegy.bakeangry.BaseActivity"></activity>
+        
+        
     </application>
 
 </manifest>

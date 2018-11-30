@@ -1,7 +1,6 @@
 package com.elegy.bakeangry;
 
 import com.app.bakeangry.R;
-
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -9,11 +8,13 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.TextView;
+import startTransferPage.AnimationWord;
 import tool.Mood;
 import tool.MoodTool;
 
 public class ActivityStartTransfer extends BaseActivity 
 {
+	private AnimationWord wordAnimation;
 	private ImageView iv_starttransf_food;
 	private TextView tv_starttransf_shake;
 	private TextView tv_starttransf_hint;
@@ -40,6 +41,8 @@ public class ActivityStartTransfer extends BaseActivity
 		mood = moodTool.getMood(moodID);
 		tv_starttransf_hint.setText(mood.getStartText());
 		iv_starttransf_food.setImageResource(mood.getStartPicture());
+		wordAnimation = new AnimationWord(tv_starttransf_shake);
+		wordAnimation.drawAnimation();
 		
 		OnClickListener lst_starttransf_shake = new OnClickListener()
 		{
@@ -49,7 +52,10 @@ public class ActivityStartTransfer extends BaseActivity
 				Intent intent = new Intent(ActivityStartTransfer.this, ActivityGame.class);
 				intent.putExtra("mood", moodID);
 				startActivity(intent);
+				overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
 			}			
-		};tv_starttransf_shake.setOnClickListener(lst_starttransf_shake);
+		};
+		tv_starttransf_shake.setOnClickListener(lst_starttransf_shake);
+		iv_starttransf_food.setOnClickListener(lst_starttransf_shake);
 	}
 }

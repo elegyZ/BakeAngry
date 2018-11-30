@@ -1,5 +1,6 @@
 package mainPage;
 
+import com.app.bakeangry.R;
 import com.elegy.bakeangry.ActivityStart;
 import android.app.Activity;
 import android.content.Intent;
@@ -15,6 +16,7 @@ public class AnimationLion
 	private ImageView lionImage;
 	private RotateAnimation lionAnimation;
 	private Activity activity;
+	
 	
 	public AnimationLion(Activity activity, ImageView lionImage)
 	{
@@ -38,6 +40,7 @@ public class AnimationLion
 			{
 				Intent intent = new Intent(activity, ActivityStart.class);
             	activity.startActivity(intent);
+            	activity.overridePendingTransition(R.anim.slide_in_down, R.anim.slide_out_down);
 			}
 			@Override
 			public void onAnimationRepeat(Animation animation) {}

@@ -45,6 +45,7 @@ public class ActivityStart extends BaseActivity
 			{
 				Intent intent = new Intent(ActivityStart.this, ActivityMode.class);
 				startActivity(intent);
+				overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
 			}
 		};tv_start_start.setOnClickListener(lst_start_start);
 	}

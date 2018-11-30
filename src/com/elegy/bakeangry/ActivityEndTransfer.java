@@ -1,7 +1,6 @@
 package com.elegy.bakeangry;
 
 import com.app.bakeangry.R;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -70,6 +69,7 @@ public class ActivityEndTransfer extends BaseActivity
 			{
 				Intent intent = new Intent(ActivityEndTransfer.this, ActivityMode.class);
 				startActivity(intent);
+				overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
 				finish();
 			}			
 		};iv_endtransf_again.setOnClickListener(lst_endtransf_again);

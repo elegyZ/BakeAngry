@@ -1,5 +1,6 @@
 package modePage;
 
+import com.app.bakeangry.R;
 import com.elegy.bakeangry.ActivityStartTransfer;
 
 import android.app.Activity;
@@ -50,6 +51,7 @@ public class AnimationMode
 				Intent intent = new Intent(activity, ActivityStartTransfer.class);
             	intent.putExtra("mood", moodID);
             	activity.startActivity(intent);
+            	activity.overridePendingTransition(R.anim.slide_in_up, R.anim.slide_out_up);
 			}
 			@Override
 			public void onAnimationRepeat(Animation animation) {}

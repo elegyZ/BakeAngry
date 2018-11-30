@@ -2,6 +2,8 @@ package tool;
 
 import java.util.List;
 
+import com.app.bakeangry.R;
+
 import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Context;
@@ -61,6 +63,7 @@ public class ShareTool
 				shareIntent.putExtra(Intent.EXTRA_STREAM, uri);
 				shareIntent.setType("image/*");
 				activity.startActivity(Intent.createChooser(shareIntent, "Share Photo"));
+				activity.overridePendingTransition(R.anim.slide_in_up, R.anim.slide_out_up);
 			}
 			else
 				Toast.makeText(activity, "Sorry, You Have Not Connected To The Internet, Please Check.", Toast.LENGTH_SHORT).show();

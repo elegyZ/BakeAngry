@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_margin="25dp"
+        android:layout_margin="30dp"
         android:gravity="center"
         android:text="@string/tv_starttransf1"
         android:textColor="#000000"

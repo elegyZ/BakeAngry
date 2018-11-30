@@ -97,6 +97,7 @@ public class ActivityGame extends BaseActivity implements SensorEventListener
 					Intent intent = new Intent(ActivityGame.this, ActivityEndTransfer.class);
 					intent.putExtra("mood", moodID);
 					startActivity(intent);
+					overridePendingTransition(R.anim.slide_in_down, R.anim.slide_out_down);
 					onStop();
 					finish();
 				}

@@ -42,14 +42,4 @@
         android:src="@drawable/dragonboat"
         android:contentDescription="@string/app_name" />
 
-    <TextView
-        android:id="@+id/tv_game_shaketime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="33dp"
-        android:text="@string/tv_game_shaketime"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
 </RelativeLayout>
